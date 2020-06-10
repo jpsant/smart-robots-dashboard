@@ -1,0 +1,12 @@
+@import './Mixins/mixins.scss';
+@include font('Roboto', '../Fonts/Roboto-Bold');
+@include font('Roboto-Light', '../Fonts/Roboto-Light');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #16113A;
+  font-family: 'Roboto';
+  color: white;
+}
