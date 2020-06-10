@@ -130,21 +130,6 @@ export default function RobotStatus({ ...props }) {
           </div>
         </div>
       </div>
-      {console.log(props.robot)}
     </div>
   );
 }
-
-/* 
-
-posX,
-  posY,
-  posZ,
-  rotation,
-  speedX,
-  speedY,
-  battery,
-  leftSpeed,
-  leftStatus,
-  rightSpeed,
-  rightStatus,*/
