@@ -118,5 +118,143 @@
         font-size: 23px;
       }
     }
+
+    &__battery {
+      background-color: #16113A;
+      width: 92px;
+      height: 82px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      top: 51%;
+
+      &-value {
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+
+    &__leftEngine {
+      display: flex;
+      flex-direction: column;
+      width: 251px;
+      position: absolute;
+      left: 16px;
+
+      &__title {
+        width: inherit;
+        height: 65px;
+        background-color: #16113A;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-icon {
+          margin-right: 14px;
+        }
+
+        &-h1 {
+          font-size: 23px;
+
+        }
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: 113px;
+        background-color: #2F3163;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        &-status {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-size: 23px;
+            margin-right: 8px;
+          }
+        }
+
+        &-speed {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-size: 23px;
+            margin: 8px 0;
+          }
+        }
+      }
+    }
+
+    &__rightEngine {
+      display: flex;
+      flex-direction: column;
+      width: 251px;
+      position: absolute;
+      right: 16px;
+
+      &__title {
+        width: inherit;
+        height: 65px;
+        background-color: #16113A;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-icon {
+          margin-right: 14px;
+        }
+
+        &-h1 {
+          font-size: 23px;
+
+        }
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        height: 113px;
+        background-color: #2F3163;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        &-status {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-size: 23px;
+            margin-right: 8px;
+          }
+        }
+
+        &-speed {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            font-size: 23px;
+            margin: 8px 0;
+          }
+        }
+      }
+    }
   }
 }

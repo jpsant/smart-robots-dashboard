@@ -5,6 +5,10 @@ import Gear from "../../Assets/gear.svg";
 import Pin from "../../Assets/pin.svg";
 import Rotation from "../../Assets/rotation.svg";
 import Velocimeter from "../../Assets/velocimeter.svg";
+import Battery from "../../Assets/turtlebot-battery.svg";
+import Engine from "../../Assets/engine.svg";
+import On from "../../Assets/on.svg";
+import Off from "../../Assets/off.svg";
 
 import Turtlebot from "../../Assets/turtlebot-svg.svg";
 
@@ -54,12 +58,60 @@ export default function RobotStatus() {
           <h1 className="robotStatusContainer__container__speed-title">
             Speed
           </h1>
-          <h1 className="robotStatusContainer__container__speed-x">
-            X:15
+          <h1 className="robotStatusContainer__container__speed-x">X:15</h1>
+          <h1 className="robotStatusContainer__container__speed-y">Y:22</h1>
+        </div>
+        <div className="robotStatusContainer__container__battery">
+          <h1 className="robotStatusContainer__container__battery-value">
+            100%
           </h1>
-          <h1 className="robotStatusContainer__container__speed-y">
-            Y:22
-          </h1>
+          <img
+            className="robotStatusContainer__container__battery-icon"
+            src={Battery}
+            alt="Turtlebot battery icon"
+          />
+        </div>
+        <div className="robotStatusContainer__container__leftEngine">
+          <div className="robotStatusContainer__container__leftEngine__title">
+            <img
+              className="robotStatusContainer__container__leftEngine__title-icon"
+              src={Engine}
+              alt="Turtlebot Engine Icon"
+            />
+            <h1 className="robotStatusContainer__container__leftEngine__title-h1">
+              Left Engine
+            </h1>
+          </div>
+          <div className="robotStatusContainer__container__leftEngine-container">
+            <div className="robotStatusContainer__container__leftEngine-container-status">
+              <h1>Engine Status:</h1>
+              <img src={On} alt="Engine Status Light"/>
+            </div>
+            <div className="robotStatusContainer__container__leftEngine-container-speed">
+              <h1>Engine Speed: 18</h1>
+            </div>
+          </div>
+        </div>
+        <div className="robotStatusContainer__container__rightEngine">
+          <div className="robotStatusContainer__container__rightEngine__title">
+            <img
+              className="robotStatusContainer__container__rightEngine__title-icon"
+              src={Engine}
+              alt="Turtlebot Engine Icon"
+            />
+            <h1 className="robotStatusContainer__container__rightEngine__title-h1">
+              Right Engine
+            </h1>
+          </div>
+          <div className="robotStatusContainer__container__rightEngine-container">
+          <div className="robotStatusContainer__container__rightEngine-container-status">
+              <h1>Engine Status:</h1>
+              <img src={Off} alt="Engine Status Light"/>
+            </div>
+            <div className="robotStatusContainer__container__rightEngine-container-speed">
+              <h1>Engine Speed: 0</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
