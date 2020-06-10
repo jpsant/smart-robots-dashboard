@@ -6,12 +6,15 @@ import ComputerStatus from '../../Components/ComputerStatus';
 import RobotStatus from '../../Components/RobotStatus';
 
 export default function ComponentsContainer() {
+
+  const[selectedRobot, handleSelectedRobot] = useState({});
+
   return (
     <div className="componentsContainer">
       <div className="componentsContainer-components">
-      <RobotList />
+      <RobotList selectedRobot={(robot) => handleSelectedRobot(robot)} />
       <ComputerStatus />
-      <RobotStatus />
+      <RobotStatus robot={selectedRobot} />
       </div>
     </div>
   )

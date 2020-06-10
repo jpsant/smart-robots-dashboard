@@ -23,7 +23,7 @@
     font-family: 'Roboto-Light';
     font-weight: 400;
     font-size: 17px;
-    margin-right: 30px;
+    margin-right: 28px;
   }
 
   &-status {
@@ -38,5 +38,5 @@
 }
 
 .robotItemContainer:hover {
-  opacity: 1;
+  opacity: 1 !important;
 }
