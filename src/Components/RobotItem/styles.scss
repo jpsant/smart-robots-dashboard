@@ -1,0 +1,42 @@
+.robotItemContainer {
+  background-color: #181A45;
+  width: 95%;
+  min-height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 8px 0;
+  opacity: 0.5;
+  transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &-turtlebot {
+    margin: 0 16px;
+  }
+
+  &-id {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+
+  &-value {
+    font-family: 'Roboto-Light';
+    font-weight: 400;
+    font-size: 17px;
+    margin-right: 30px;
+  }
+
+  &-status {
+    font-size: 20px;
+  }
+
+  &-light {
+    width: 22.13px;
+    height: 22px;
+    margin: 0 6px;
+  }
+}
+
+.robotItemContainer:hover {
+  opacity: 1;
+}

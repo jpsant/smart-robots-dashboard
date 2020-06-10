@@ -1,0 +1,122 @@
+.robotStatusContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #272953;
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  &__title {
+    background-color: #181A45;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-h1 {
+      font-size: 27px;
+      margin-right: 22px;
+    }
+
+    &-icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__container {
+    height: inherit;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    &__position {
+      top: 32px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background-color: #16113A;
+      border-radius: 5px;
+      width: 259px;
+      height: 65px;
+
+      &-icon {
+        margin-right: 16px;
+      }
+
+      &-x {
+        font-size: 23px;
+      }
+
+      &-y {
+        font-size: 23px;
+        margin: 0 12px;
+      }
+
+      &-z {
+        font-size: 23px;
+      }
+    }
+
+    &__rotation {
+      top: 64px;
+      left: 16px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background-color: #16113A;
+      border-radius: 5px;
+      width: 259px;
+      height: 65px;
+
+      &-icon {
+        margin-right: 16px;
+      }
+
+      &-value {
+        font-size: 23px;
+      }
+    }
+
+    &__speed {
+      top: 64px;
+      right: 16px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      background-color: #16113A;
+      border-radius: 5px;
+      width: 259px;
+      height: 65px;
+
+      &-icon {
+        margin-right: 4px;
+      }
+
+      &-title {
+        font-size: 23px;
+        margin: 0 2px;
+      }
+
+      &-x {
+        font-size: 23px;
+        margin: 0 8px;
+      }
+
+      &-y {
+        font-size: 23px;
+      }
+    }
+  }
+}

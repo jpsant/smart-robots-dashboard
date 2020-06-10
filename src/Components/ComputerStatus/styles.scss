@@ -1,0 +1,53 @@
+.computerStatusContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #272953;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    background-color: #181A45;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+      margin-right: 30px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &-h1 {
+      font-size: 27px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+
+    &-icon {
+      width: 30px;
+      margin-right: 16px;
+    }
+
+    &-battery {
+      font-family: 'Roboto';
+      font-size: 27px;
+    }
+
+    &-value {
+      font-family: 'Roboto-Light';
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: 16px;
+      margin-right: 8px;
+    }
+  }
+}
