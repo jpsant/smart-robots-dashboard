@@ -1,12 +1,25 @@
-@import './Mixins/mixins.scss';
-@include font('Roboto', '../Fonts/Roboto-Bold');
-@include font('Roboto-Light', '../Fonts/Roboto-Light');
+@import "./Mixins/mixins.scss";
+@include font("Roboto", "../Fonts/Roboto-Bold");
+@include font("Roboto-Light", "../Fonts/Roboto-Light");
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #16113A;
-  font-family: 'Roboto';
+  background-color: #16113a;
+  font-family: "Roboto";
   color: white;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  background: #272953;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #181a45;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }
