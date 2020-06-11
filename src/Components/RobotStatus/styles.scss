@@ -1,3 +1,5 @@
+@import '../../Mixins/mixins.scss';
+
 .robotStatusContainer {
   width: 100%;
   height: 100%;
@@ -35,6 +37,15 @@
     justify-content: center;
     margin-bottom: 32px;
 
+    @include respond-to(medium) {
+      align-items: center;
+
+      &-image {
+        width: 650px;
+        transform: translateY(20px);
+      }
+    }
+
     &__position {
       top: 32px;
       position: absolute;
@@ -46,6 +57,11 @@
       border-radius: 5px;
       width: 259px;
       height: 65px;
+
+      @include respond-to(medium) {
+        height: 55px;
+        width: 250px;
+      }
 
       &-icon {
         margin-right: 16px;
@@ -78,6 +94,12 @@
       width: 259px;
       height: 65px;
 
+      @include respond-to(medium) {
+        height: 55px;
+        width: 250px;
+        top: 32px;
+      }
+
       &-icon {
         margin-right: 16px;
       }
@@ -99,6 +121,12 @@
       border-radius: 5px;
       width: 259px;
       height: 65px;
+
+      @include respond-to(medium) {
+        height: 55px;
+        width: 265px;
+        top: 32px;
+      }
 
       &-icon {
         margin-right: 4px;
@@ -131,6 +159,15 @@
       border-radius: 5px;
       top: 51%;
 
+      @include respond-to(medium) {
+        top: 46%;
+        height: 70px;
+      }
+
+      &-icon {
+        width: 50px;
+      }
+
       &-value {
         font-size: 20px;
         margin: 0;
@@ -143,6 +180,11 @@
       width: 251px;
       position: absolute;
       left: 16px;
+      bottom: 0px;
+
+      @include respond-to(medium) {
+        width: 230px;
+      }
 
       &__title {
         width: inherit;
@@ -172,6 +214,10 @@
         background-color: #2F3163;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+
+        @include respond-to(medium) {
+          height: 105px;
+        }
 
         &-status {
           display: flex;
@@ -203,6 +249,12 @@
       width: 251px;
       position: absolute;
       right: 16px;
+      bottom: 0px;
+
+      @include respond-to(medium) {
+        width: 230px;
+        right: 32px;
+      }
 
       &__title {
         width: inherit;
@@ -232,6 +284,10 @@
         background-color: #2F3163;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+
+        @include respond-to(medium) {
+          height: 105px;
+        }
 
         &-status {
           display: flex;

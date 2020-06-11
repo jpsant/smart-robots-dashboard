@@ -1,3 +1,5 @@
+@import '../../Mixins/mixins.scss';
+
 .robotItemContainer {
   background-color: #181A45;
   width: 95%;
@@ -6,17 +8,30 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin: 8px 0;
+  margin: 8px 5px;
   opacity: 0.5;
   transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
 
+  @include respond-to(medium) {
+    padding: 0 8px;
+    width: 90%;
+  }
+
   &-turtlebot {
     margin: 0 16px;
+
+    @include respond-to(medium) {
+      margin: 0 8px;
+    }
   }
 
   &-id {
     font-size: 20px;
     margin: 0 6px;
+
+    @include respond-to(medium) {
+      margin: 0 4px;
+    }
   }
 
   &-value {
@@ -24,6 +39,10 @@
     font-weight: 400;
     font-size: 17px;
     margin-right: 28px;
+
+    @include respond-to(medium) {
+      margin-right: 16px;
+    }
   }
 
   &-status {

@@ -1,3 +1,5 @@
+@import '../../Mixins/mixins.scss';
+
 .computerStatusContainer {
   width: 100%;
   height: 100%;
@@ -35,11 +37,21 @@
     &-icon {
       width: 30px;
       margin-right: 16px;
+
+      @include respond-to(medium) {
+        width: 25px;
+        margin-right: 12px;
+      }
     }
 
     &-battery {
       font-family: 'Roboto';
       font-size: 27px;
+
+      @include respond-to(medium) {
+        font-size: 25px;
+        margin: 22px 0;
+      }
     }
 
     &-value {
@@ -48,6 +60,10 @@
       font-weight: 400;
       margin-left: 16px;
       margin-right: 8px;
+
+      @include respond-to(medium) {
+        margin-right: 12px;
+      }
     }
   }
 }
