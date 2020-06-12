@@ -21,10 +21,19 @@
       margin-right: 30px;
       width: 40px;
       height: 40px;
+
+      @include respond-to(small) {
+        width: 35px;
+        margin-right: 20px;
+      }
     }
 
     &-h1 {
       font-size: 27px;
+
+      @include respond-to(small) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -52,6 +61,10 @@
         font-size: 25px;
         margin: 22px 0;
       }
+
+      @include respond-to(small) {
+        font-size: 16px;
+      }
     }
 
     &-value {
@@ -63,6 +76,19 @@
 
       @include respond-to(medium) {
         margin-right: 12px;
+      }
+
+      @include respond-to(small) {
+        font-size: 16px;
+        margin-left: 6px;
+        margin-right: 0;
+      }
+    }
+
+    &-status {
+
+      @include respond-to(small) {
+        margin-left: 10px;
       }
     }
   }
