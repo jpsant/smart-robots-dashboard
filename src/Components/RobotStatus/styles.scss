@@ -45,12 +45,13 @@
         transform: translateY(20px);
 
         @include respond-to(small) {
-          width: 550px;
+          width: 520px;
+          transform: translateY(50px);
         }
       }
     }
 
-    &__position {
+    &__rotation {
       top: 32px;
       position: absolute;
       display: flex;
@@ -67,16 +68,25 @@
         width: 250px;
       }
 
+      @include respond-to(small) {
+        height: 58px;
+        top: 24px;
+      }
+
       &-icon {
         margin-right: 16px;
       }
 
       &-value {
         font-size: 23px;
+
+        @include respond-to(small) {
+          font-size: 19px;
+        }
       }
     }
 
-    &__rotation {
+    &__position {
       top: 115px;
       left: 16px;
       position: absolute;
@@ -93,6 +103,10 @@
         top: 32px;
       }
 
+      @include respond-to(small) {
+        top: 80px;
+      }
+
       &-title {
         width: inherit;
         height: 65px;
@@ -103,21 +117,41 @@
         align-items: center;
         justify-content: center;
 
+        @include respond-to(small) {
+          height: 55px;
+        }
+
         &-icon {
           margin-right: 16px;
+
+          @include respond-to(small) {
+            width: 22px;
+          }
         }
-  
+
         &-x {
           font-size: 23px;
+
+          @include respond-to(small) {
+            font-size: 19px;
+          }
         }
-  
+
         &-y {
           font-size: 23px;
           margin: 0 12px;
+
+          @include respond-to(small) {
+            font-size: 19px;
+          }
         }
-  
+
         &-z {
           font-size: 23px;
+
+          @include respond-to(small) {
+            font-size: 19px;
+          }
         }
       }
 
@@ -125,10 +159,22 @@
         display: flex;
         flex-direction: column;
         width: inherit;
-        padding-top: 180px;
+        height: 159px;
         background-color: #2f3163;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        max-height: 159px;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          font-size: 27px;
+          margin: 80px 0;
+
+          @include respond-to(small) {
+            margin: 50px 0;
+          }
+        }
       }
     }
 
@@ -151,6 +197,10 @@
         top: 32px;
       }
 
+      @include respond-to(small) {
+        top: 80px;
+      }
+
       &-title {
         width: inherit;
         height: 65px;
@@ -161,33 +211,61 @@
         align-items: center;
         justify-content: center;
 
+        @include respond-to(small) {
+          height: 55px;
+        }
+
         &-icon {
           margin-right: 4px;
+
+          @include respond-to(small) {
+            width: 40px;
+          }
         }
-  
+
         &-title {
           font-size: 23px;
           margin: 0 2px;
         }
-  
+
         &-x {
           font-size: 23px;
           margin: 0 8px;
+
+          @include respond-to(small) {
+            font-size: 19px;
+          }
         }
-  
+
         &-y {
           font-size: 23px;
+
+          @include respond-to(small) {
+            font-size: 19px;
+          }
         }
       }
-      
+
       &-container {
         display: flex;
         flex-direction: column;
         width: inherit;
-        padding-top: 180px;
         background-color: #2f3163;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        height: 159px;
+        max-height: 159px;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          font-size: 27px;
+          margin: 80px 0;
+
+          @include respond-to(small) {
+            margin: 50px 0;
+          }
+        }
       }
     }
 
@@ -206,6 +284,10 @@
       @include respond-to(medium) {
         top: 46%;
         height: 70px;
+      }
+
+      @include respond-to(small) {
+        top: 53%;
       }
 
       &-icon {
@@ -230,6 +312,11 @@
         width: 230px;
       }
 
+      @include respond-to(small) {
+        width: 210px;
+        bottom: -20px;
+      }
+
       &__title {
         width: inherit;
         height: 65px;
@@ -240,12 +327,24 @@
         align-items: center;
         justify-content: center;
 
+        @include respond-to(small) {
+          height: 55px;
+        }
+
         &-icon {
           margin-right: 14px;
+
+          @include respond-to(small) {
+            width: 35px;
+          }
         }
 
         &-h1 {
           font-size: 23px;
+
+          @include respond-to(small) {
+            font-size: 21px;
+          }
         }
       }
 
@@ -262,6 +361,10 @@
           height: 105px;
         }
 
+        @include respond-to(small) {
+          height: 90px;
+        }
+
         &-status {
           display: flex;
           align-items: center;
@@ -270,6 +373,10 @@
           h1 {
             font-size: 23px;
             margin-right: 8px;
+
+            @include respond-to(small) {
+              font-size: 19px;
+            }
           }
         }
 
@@ -281,6 +388,11 @@
           h1 {
             font-size: 23px;
             margin: 8px 0;
+
+            @include respond-to(small) {
+              font-size: 19px;
+              margin: 4px 0;
+            }
           }
         }
       }
@@ -299,6 +411,12 @@
         right: 32px;
       }
 
+      @include respond-to(small) {
+        width: 210px;
+        bottom: -20px;
+        right: 16px;
+      }
+
       &__title {
         width: inherit;
         height: 65px;
@@ -309,12 +427,24 @@
         align-items: center;
         justify-content: center;
 
+        @include respond-to(small) {
+          height: 55px;
+        }
+
         &-icon {
           margin-right: 14px;
+
+          @include respond-to(small) {
+            width: 35px;
+          }
         }
 
         &-h1 {
           font-size: 23px;
+
+          @include respond-to(small) {
+            font-size: 21px;
+          }
         }
       }
 
@@ -331,6 +461,10 @@
           height: 105px;
         }
 
+        @include respond-to(small) {
+          height: 90px;
+        }
+
         &-status {
           display: flex;
           align-items: center;
@@ -339,6 +473,10 @@
           h1 {
             font-size: 23px;
             margin-right: 8px;
+
+            @include respond-to(small) {
+              font-size: 19px;
+            }
           }
         }
 
@@ -350,6 +488,11 @@
           h1 {
             font-size: 23px;
             margin: 8px 0;
+
+            @include respond-to(small) {
+              font-size: 19px;
+              margin: 4px 0;
+            }
           }
         }
       }

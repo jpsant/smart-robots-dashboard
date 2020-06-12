@@ -29,35 +29,37 @@ export default function RobotStatus({ ...props }) {
           src={Turtlebot}
           alt="Turtlebot"
         />
-        <div className="robotStatusContainer__container__position">
+        <div className="robotStatusContainer__container__rotation">
           <img
-            className="robotStatusContainer__container__position-icon"
+            className="robotStatusContainer__container__rotation-icon"
             src={Rotation}
             alt="Rotation Icon"
           />
 
-          <h1 className="robotStatusContainer__container__position-value">
+          <h1 className="robotStatusContainer__container__rotation-value">
             Rotation: {props.robot.rotation}
           </h1>
         </div>
-        <div className="robotStatusContainer__container__rotation">
-          <div className="robotStatusContainer__container__rotation-title">
+        <div className="robotStatusContainer__container__position">
+          <div className="robotStatusContainer__container__position-title">
           <img
-            className="robotStatusContainer__container__rotation-title-icon"
+            className="robotStatusContainer__container__position-title-icon"
             src={Pin}
             alt="Position Icon"
           />
-            <h1 className="robotStatusContainer__container__rotation-title-x">
+            <h1 className="robotStatusContainer__container__position-title-x">
               X:{props.robot.posX}
             </h1>
-            <h1 className="robotStatusContainer__container__rotation-title-y">
+            <h1 className="robotStatusContainer__container__position-title-y">
               Y:{props.robot.posY}
             </h1>
-            <h1 className="robotStatusContainer__container__rotation-title-z">
+            <h1 className="robotStatusContainer__container__position-title-z">
               Z:{props.robot.posZ}
             </h1>
           </div>
-          <div className="robotStatusContainer__container__rotation-container"></div>
+          <div className="robotStatusContainer__container__position-container">
+            <h1>position graph</h1>
+          </div>
         </div>
         <div className="robotStatusContainer__container__speed">
           <div className="robotStatusContainer__container__speed-title">
@@ -76,7 +78,9 @@ export default function RobotStatus({ ...props }) {
               Y:{props.robot.speedY}
             </h1>
           </div>
-          <div className="robotStatusContainer__container__speed-container"></div>
+          <div className="robotStatusContainer__container__speed-container">
+            <h1>speed graph</h1>
+          </div>
         </div>
         <div className="robotStatusContainer__container__battery">
           <h1 className="robotStatusContainer__container__battery-value">
