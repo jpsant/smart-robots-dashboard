@@ -32,44 +32,51 @@ export default function RobotStatus({ ...props }) {
         <div className="robotStatusContainer__container__position">
           <img
             className="robotStatusContainer__container__position-icon"
-            src={Pin}
-            alt="Position Icon"
-          />
-          <h1 className="robotStatusContainer__container__position-x">
-            X:{props.robot.posX}
-          </h1>
-          <h1 className="robotStatusContainer__container__position-y">
-            Y:{props.robot.posY}
-          </h1>
-          <h1 className="robotStatusContainer__container__position-z">
-            Z:{props.robot.posZ}
-          </h1>
-        </div>
-        <div className="robotStatusContainer__container__rotation">
-          <img
-            className="robotStatusContainer__container__rotation-icon"
             src={Rotation}
             alt="Rotation Icon"
           />
-          <h1 className="robotStatusContainer__container__rotation-value">
+
+          <h1 className="robotStatusContainer__container__position-value">
             Rotation: {props.robot.rotation}
           </h1>
         </div>
-        <div className="robotStatusContainer__container__speed">
+        <div className="robotStatusContainer__container__rotation">
+          <div className="robotStatusContainer__container__rotation-title">
           <img
-            className="robotStatusContainer__container__speed-icon"
-            src={Velocimeter}
-            alt="speed Icon"
+            className="robotStatusContainer__container__rotation-title-icon"
+            src={Pin}
+            alt="Position Icon"
           />
-          <h1 className="robotStatusContainer__container__speed-title">
-            Speed
-          </h1>
-          <h1 className="robotStatusContainer__container__speed-x">
-            X:{props.robot.speedX}
-          </h1>
-          <h1 className="robotStatusContainer__container__speed-y">
-            Y:{props.robot.speedY}
-          </h1>
+            <h1 className="robotStatusContainer__container__rotation-title-x">
+              X:{props.robot.posX}
+            </h1>
+            <h1 className="robotStatusContainer__container__rotation-title-y">
+              Y:{props.robot.posY}
+            </h1>
+            <h1 className="robotStatusContainer__container__rotation-title-z">
+              Z:{props.robot.posZ}
+            </h1>
+          </div>
+          <div className="robotStatusContainer__container__rotation-container"></div>
+        </div>
+        <div className="robotStatusContainer__container__speed">
+          <div className="robotStatusContainer__container__speed-title">
+            <img
+              className="robotStatusContainer__container__speed-title-icon"
+              src={Velocimeter}
+              alt="speed Icon"
+            />
+            <h1 className="robotStatusContainer__container__speed-title-title">
+              Speed
+            </h1>
+            <h1 className="robotStatusContainer__container__speed-title-x">
+              X:{props.robot.speedX}
+            </h1>
+            <h1 className="robotStatusContainer__container__speed-title-y">
+              Y:{props.robot.speedY}
+            </h1>
+          </div>
+          <div className="robotStatusContainer__container__speed-container"></div>
         </div>
         <div className="robotStatusContainer__container__battery">
           <h1 className="robotStatusContainer__container__battery-value">
